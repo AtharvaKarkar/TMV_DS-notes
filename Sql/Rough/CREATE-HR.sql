@@ -58,7 +58,35 @@ SELECT * FROM countries;
 INSERT INTO countries (country_id,country_name,region_id) VALUES 
 (1,"BHARAT",43); /*inserting a single row into table*/
 
+INSERT INTO countries (country_id,country_name,region_id) VALUES 
+(2,"INDIA",45), (3,"USA",78), (4,"RUSSIA",89);
+
 SELECT * FROM countries;
 
+DESCRIBE TABLE countries;
+
+INSERT INTO dependents (first_name,last_name,relationship,employee_id) VALUES ('Dustin','Johnson','Child',785);
+INSERT INTO dependents  VALUES (45,'manoj','kale','child',56);
+INSERT INTO dependents (first_name,last_name,relationship,employee_id) VALUES ('Shri','Nivas','Dad',20), ('Kishor', 'Aware','Son',78);
+SELECT * FROM dependents;
+SELECT * FROM dependents WHERE employee_id = 9;
+INSERT INTO dependents (first_name,last_name,relationship,employee_id) VALUES ("Niraj", "Chopra", "uncle",20), ("Sushil", "Kumar","son",18), ("Pablo","Escobar","brother",9);
+CREATE TABLE dependent_archives (
+dependent_id INT(15) AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(20) NOT NULL,
+last_name VARCHAR(20) NOT NULL,
+relationship VARCHAR(20) NOT NULL,
+remployee_id INT(15) NOT NULL
+);
+
+INSERT INTO dependent_archives SELECT * FROM dependents;
+ CREATE TABLE countries_archives (
+ country_id INT (10) AUTO_INCREMENT PRIMARY KEY,
+ country_name VARCHAR(20) NOT NULL,
+ region_id INT (10) NOT NULL
+ );
+ INSERT INTO countries_archives SELECT * FROM countries;
+ SELECT * FROM countries_archives;
+SELECT * FROM dependent_archives;
 ALTER TABLE countries MODIFY country_name VARCHAR(20);
 
