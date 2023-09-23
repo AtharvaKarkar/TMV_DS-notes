@@ -48,5 +48,17 @@ relationship VARCHAR (20) NOT NULL,
 employee_id INT (11) NOT NULL
 );
 SELECT * FROM dependents;
+USE hr;
+SELECT * FROM employees;
+SELECT employee_id, first_name, last_name FROM employees;
+SELECT first_name AS First, last_name AS LAST FROM employees;
+SELECT email AS MAIL , job_id AS ID_JOB FROM employees;
+/*AS keyword is used to provide an alias or a temporary name for the table or a column in the result set.  */
+SELECT * FROM countries;
+INSERT INTO countries (country_id,country_name,region_id) VALUES 
+(1,"BHARAT",43); /*inserting a single row into table*/
 
+SELECT * FROM countries;
+
+ALTER TABLE countries MODIFY country_name VARCHAR(20);
 
