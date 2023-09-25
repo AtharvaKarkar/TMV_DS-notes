@@ -1,0 +1,1 @@
+SELECT job_id,phone_number,first_name,salary FROM employees;

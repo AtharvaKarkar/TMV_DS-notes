@@ -17,7 +17,5 @@ int main() {
     else{
         printf("Not found %d",element_to_search);
     }
-    return 0;
-
-
+    return 0;   
 }

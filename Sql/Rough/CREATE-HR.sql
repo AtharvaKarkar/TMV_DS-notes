@@ -90,3 +90,40 @@ INSERT INTO dependent_archives SELECT * FROM dependents;
 SELECT * FROM dependent_archives;
 ALTER TABLE countries MODIFY country_name VARCHAR(20);
 
+USE hr;
+DESCRIBE TABLE employees;
+
+USE hr;
+CREATE TABLE employees_archives (
+employee_id INT (10) PRIMARY KEY,
+first_name VARCHAR(20) DEFAULT NULL,
+last_name VARCHAR (20) DEFAULT NULL,
+email VARCHAR(100) DEFAULT NULL,
+phone_number varchar(20) DEFAULT NULL,
+hire_date DATE NOT NULL,
+job_id INT (20) DEFAULT NULL,
+salary DECIMAL (8,2) NOT NULL,
+manager_id INT(20) DEFAULT NULL,
+department_id INT(20) DEFAULT NULL
+);
+
+INSERT INTO employees_archives SELECT * FROM employees;
+SELECT * FROM employees_archives;
+
+CREATE TABLE jobs_archives (
+job_id INT(20) PRIMARY KEY,
+job_title VARCHAR(35) NOT NULL,
+min_salary DECIMAL(8,2) NOT NULL,
+max_salary DECIMAL (8,2) NOT NULL
+);
+
+INSERT INTO jobs_archives SELECT * FROM jobs;
+SELECT * FROM employees_archives;
+SELECT job_id,phone_number,first_name,salary FROM employees;
+SELECT @hostname;
+SELECT user(); /*command to find out the username*/
+SELECT * FROM countries;
+SELECT * FROM countries WHERE country_id = 4;
+SELECT country_id, country_name, country_id *2 AS new_id FROM countries;
+SELECT * FROM employees;
+
