@@ -124,6 +124,6 @@ SELECT @hostname;
 SELECT user(); /*command to find out the username*/
 SELECT * FROM countries;
 SELECT * FROM countries WHERE country_id = 4;
-SELECT country_id, country_name, country_id *2 AS new_id FROM countries;
+SELECT country_id, country_name, country_id * 2 AS new_id FROM countries;
 SELECT * FROM employees;
 
