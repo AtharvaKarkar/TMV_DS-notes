@@ -23,8 +23,14 @@ SELECT * FROM employees_archives;
 SELECT first_name,last_name,hire_date FROM employees_archives ORDER BY hire_date ASC;
 USE hr; 
 /*if you use two or more columns, the DISTINCT will use the combination of values in those columns to evaludate the duplicate. */
-SELECT DISTINCT employee_id FROM employees_archives ORDER BY employee_id ASC ;  /*remove duplicates rows from a result set.*/
+/*SELECT salary FROM employees_archives ORDER BY salary DESC;*/
+SELECT DISTINCT salary FROM employees_archives ORDER BY salary DESC ;  /*remove duplicates rows from a result set.*/
 /*NOTE: The DISTINCE keyword, only removes the duplicate rows from the result set. It doesn't delete duplicate rows in the table.*/
+
+/*applying distinct keyword on multiple columns*/
+SELECT DISTINCT salary,manager_id FROM employees_archives ORDER BY manager_id, salary DESC;  /* note : that you will still see the duplicate in the manager_id column because the DISTINCT operator uses values from both job
+manager_id and salary to evaluate the duplicate, not just values in the manager_id column.*/
+
 
 
 
