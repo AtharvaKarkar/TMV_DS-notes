@@ -30,7 +30,7 @@ SELECT DISTINCT salary FROM employees_archives ORDER BY salary DESC ;  /*remove 
 /*applying distinct keyword on multiple columns*/
 SELECT DISTINCT salary,manager_id FROM employees_archives ORDER BY manager_id, salary DESC;  /* note : that you will still see the duplicate in the manager_id column because the DISTINCT operator uses values from both job
 manager_id and salary to evaluate the duplicate, not just values in the manager_id column.*/
-
+SELECT DISTINCT phone_number FROM employees_archives ORDER BY phone_number DESC;
 
 
 
