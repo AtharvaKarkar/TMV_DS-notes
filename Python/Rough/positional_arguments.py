@@ -1,4 +1,4 @@
-# position-only arguments mean whenever we pass the arguments in the order we have defined function parameter in which if you chang the argument position then you may get the unexpected output.
+# position-only arguments mean whenever we pass the arguments in the order we have defined function parameter in which if you change the argument position then you may get the unexpected output.
 
 #we should use positional argument whenever we know the order of argument to be passed.
 
