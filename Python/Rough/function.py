@@ -3,8 +3,8 @@
 a = int(input("Enter a number\n"))
 b = int(input("Enter another number\n"))
 
-def sum():  # sun() function defined 
-  sum = a+b;
+def sum():  # sum() function defined 
+  sum = a+b
   print(sum)
 sum()  # function is being called  
 
@@ -26,11 +26,8 @@ def square(a):  # passing parameter., it holds the value for function.
     sq = a**2
     print(sq)
     
-    
 square(a)  
 """
-
-
 
 # wap to accept a number from user pass that number to a function square
 
