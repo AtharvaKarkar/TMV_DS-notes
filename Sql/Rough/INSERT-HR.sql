@@ -34,3 +34,4 @@ SELECT DISTINCT phone_number FROM employees_archives ORDER BY phone_number DESC;
 
 
 
+SELECT * FROM countries_archives;
