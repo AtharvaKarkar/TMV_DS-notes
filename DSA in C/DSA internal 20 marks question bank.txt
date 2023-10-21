@@ -1,0 +1,36 @@
+DSA internal 20 marks question bank
+
+ 1. Explain Time Complexity with their components and examples.
+ 
+2. Discuss in detail the Algorithm Specification
+
+  3. Explain Best, Average and Worst operation counts for various algorithms
+
+ 4.What do you mean by Asymptotic Notation? 
+
+ 5. Explain Big O Notation with example ? 
+
+6. Explain Omega Notation. With example ?
+ 
+7. Explain Theta Notation. With example ?
+
+ 8. Explain Linear and Non-Linear Data structure with examples ?
+
+ 9. What is linked list? Write and explain the
+algorithm for create and traverse operations in single linked list with example. 
+
+10 Write
+algorithm for insert and delete a node from doubly linked list 
+
+11 . Explain the circular linked list in
+detail. 
+
+ 12. What is stack? Write algorithm for operations of stack with examples
+
+ 13. What are
+the limitations of queue? Explain the algorithms for various operations of circular queue.
+
+ 14.
+Give brief description about the priority queues. 
+
+15 . What are the application of queue ?
