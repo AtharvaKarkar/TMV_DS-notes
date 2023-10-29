@@ -8,7 +8,8 @@ name = input("Enter your name\n")
 def greet():
     print("Enter inside function")
     print(f'namaste {name}')
-greet()  # calling the function, so that we can use it.,after calling the function the control / flow of the prog goes to the function defination.
+# driver code of the greet() function.
+greet()  # calling the function, so that we can use it.,after calling the function the control / flow of the program goes to the function defination.
 print("exited function")
 
 # function arguments : an argument is a value that is accepted by a fuction.

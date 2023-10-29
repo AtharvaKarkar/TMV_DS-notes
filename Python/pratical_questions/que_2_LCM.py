@@ -8,8 +8,6 @@ def find_gcd(x,y):
 def find_lcm(x,y):
     return x * y  // find_gcd(x,y)
 
-
-
 nums = list(map(int, input("Enter space-separated numbers: ").split())) 
 
 lcm_result = nums[0]
