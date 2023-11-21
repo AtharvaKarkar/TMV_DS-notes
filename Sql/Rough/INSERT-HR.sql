@@ -32,6 +32,8 @@ SELECT DISTINCT salary,manager_id FROM employees_archives ORDER BY manager_id, s
 manager_id and salary to evaluate the duplicate, not just values in the manager_id column.*/
 SELECT DISTINCT phone_number FROM employees_archives ORDER BY phone_number DESC;
 
-
-
 SELECT * FROM countries_archives;
+
+Use hr;
+SELECT first_name,last_name,job_id FROM employees_archives WHERE job_id > 1 ORDER BY job_id DESC;
+SELECT first_name,last_name,salary FROM employees_archives WHERE salary > 1000 ORDER BY salary DESC;

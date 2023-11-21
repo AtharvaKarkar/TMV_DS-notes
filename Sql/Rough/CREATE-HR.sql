@@ -127,3 +127,7 @@ SELECT * FROM countries WHERE country_id = 4;
 SELECT country_id, country_name, country_id * 2 AS new_id FROM countries;
 SELECT * FROM employees;
 
+
+USE student;
+SELECT student_id,course_id,fname,mname,lname,age FROM student_info;
+SELECT * FROM student_info;

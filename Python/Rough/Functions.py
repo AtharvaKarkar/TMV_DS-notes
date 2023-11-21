@@ -19,8 +19,7 @@ def add_num(num1,num2):
     sum = num1+num2
     print('Sum:',sum)
 add_num(num1=1,num2=2)
-    
-    
+        
 # square of a num
 
 num = int(input("Enter a num\n"))
