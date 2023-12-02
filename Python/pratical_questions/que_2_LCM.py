@@ -21,8 +21,6 @@ print(f"The LCM of the numbers is: {lcm_result}")
 print(f"The GCD of the numbers is: {gcd_result}")
     
 
-   
-
 # split() is used to split the string entered by user into a list of substring based on space.
  
  
